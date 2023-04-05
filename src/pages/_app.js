@@ -1,5 +1,19 @@
+import Head from 'next/head'
+
 import '@/styles/globals.css'
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const App = ({ Component, pageProps }) => {
+  return (
+    <div
+      className="bg-background text-black grid w-full h-screen overflow-auto
+                  justify-start lg:justify-center"
+    >
+      <Head>
+        <title>Multi Step Form</title>
+      </Head>
+      <Component {...pageProps} />
+    </div>
+  )
 }
+
+export default App
