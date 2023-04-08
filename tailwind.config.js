@@ -27,7 +27,11 @@ module.exports = {
       white: '#FFFFFF',
       black: '#000000',
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: 'Ubuntu',
+      },
+    },
   },
   plugins: [require('@tailwindcss/forms')({ strategy: 'class' })],
 }

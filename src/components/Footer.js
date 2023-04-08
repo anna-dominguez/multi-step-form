@@ -1,6 +1,6 @@
 const Footer = ({ stepActive, setStepActive, error }) => (
   <footer
-    className={`fixed lg:absolute w-full flex ${
+    className={`fixed mt-10 lg:m-0 lg:absolute w-full flex ${
       stepActive ? 'justify-between' : 'justify-end'
     } ${
       stepActive === 4 && 'hidden'
